@@ -1,0 +1,4 @@
+#!/bin/bash -e
+make
+./runVector | diff - SampleOutput
+echo "Test pass."
