@@ -1,0 +1,6 @@
+PROGRAM = NQuenes
+
+all: $(PROGRAM)
+
+NQuenes: 
+	g++ -o $(PROGRAM) 
