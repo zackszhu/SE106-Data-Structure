@@ -1,0 +1,8 @@
+PROGRAM_1 = 5130379013
+SOURCE_1 = 5130379013.cpp
+
+all:
+	g++ -O2 -o $(PROGRAM_1) $(SOURCE_1)
+
+clean:
+	rm $(PROGRAM_1) 
