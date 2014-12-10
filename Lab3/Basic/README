@@ -1,0 +1,34 @@
+# bug fixed
+
+## variable with number
+
+old: let x1 = 1
+> syntax error
+new: let x1 = 1
+> successful
+
+## dumped data
+
+old: run dump
+> run normally
+new: run dump
+> syntax error
+
+## negative number errors
+
+old: print -1
+> syntax error
+new: print -1
+> -1
+old: let x = -1
+> syntax error
+new: let x = -1
+> successful
+
+## strange \n
+
+old: \n
+> segmentation fault
+new: \n
+> syntax error
+
