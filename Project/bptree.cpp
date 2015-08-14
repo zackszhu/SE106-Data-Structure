@@ -95,7 +95,7 @@ BPTree::~BPTree() {
 	file.seekp(0, file.beg);
 	file.write((char*)&num, sizeof(int));
 	file.write((char*)&rootID, sizeof(int));
-	for (int i = 0; i < CACHESIZE; i++) {
+	for (int i = 0; i < 100; i++) {
 		if (indexCache[i].id != 0)
 			writeNodeToFile(&indexCache[i]);
 	}
